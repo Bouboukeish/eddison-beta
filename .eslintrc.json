@@ -12,6 +12,8 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
+    "no-extra-semi": "off",
+    "no-useless-escape": "off",
     "react/no-unknown-property": ["error", {
       "ignore": [
         "fill-opacity",
