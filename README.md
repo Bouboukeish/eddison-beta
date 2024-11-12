@@ -44,14 +44,14 @@ To run Luro locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Shreyas-29/luro-ai.git
+    git clone https://github.com/yourusername/luro-ai.git
     ```
 2. Install dependencies:
     ```bash
-    pnpm install
+    npm install
     ```
 3. Set up environment variables in a `.env` file:
-    ```
+    ```env
     # app
     NEXT_PUBLIC_APP_NAME=
     NEXT_PUBLIC_APP_DOMAIN=
@@ -70,7 +70,7 @@ To run Luro locally, follow these steps:
 
 4. Run the development server:
     ```bash
-    pnpm run dev
+    npm run dev
     ```
 
 ## ☕ Buy Me a Coffee
