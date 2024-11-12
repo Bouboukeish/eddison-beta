@@ -38,7 +38,7 @@ const Menu = () => {
                                     >
                                         <Icons.icon className="w-6 h-6" />
                                         <div className="my-2 text-lg font-normal">
-                                            Luro AI
+                                            Eddison AI
                                         </div>
                                         <p className="text-sm text-muted-foreground">
                                             Your ultimate social media management tool
