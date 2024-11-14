@@ -8,7 +8,7 @@
 
 
 ## 🌟 Introduction
-Eddison is an innovative social media marketing platform designed to help you streamline your social media management effortlessly. Built with Next.js, Tailwind CSS, Shadcn UI, Magic UI, Aceternity UI, Prisma, MongoDB, Clerk, React Hook Form, and TypeScript, Eddison provides powerful analytics and user-friendly features to enhance your social media marketing experience.
+Eddison is an innovative AI-powered educational platform designed to transform how students learn and revise. Built with Next.js, Tailwind CSS, and cutting-edge AI technologies, Eddison converts various study materials into personalized, interactive learning content.
 
 ## 🚀 Features
 

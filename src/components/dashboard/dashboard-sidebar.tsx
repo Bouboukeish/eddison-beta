@@ -1,7 +1,7 @@
 "use client";
 
-import { SIDEBAR_LINKS } from "@/constants/links";
-import { SearchIcon, Settings, LogOut, User, CreditCard } from "lucide-react";
+import { SIDEBAR_LINKS, FOLDERS } from "@/constants/links";
+import { SearchIcon, Settings, LogOut, User, CreditCard, FolderIcon, Plus, BookOpen, Code, Calculator, Atom, Palette } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Container from "../global/container";
@@ -17,6 +17,13 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+const folderIcons: Record<string, any> = {
+    'Mathematics': Calculator,
+    'Physics': Atom,
+    'Computer Science': Code,
+    'default': BookOpen,
+};
 
 const DashboardSidebar = () => {
     const { signOut } = useClerk();
@@ -65,6 +72,62 @@ const DashboardSidebar = () => {
                     })}
                 </ul>
 
+                <div className="space-y-1">
+                    <div className="flex items-center justify-between px-3 py-2">
+                        <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
+                            Folders
+                        </p>
+                        <Button 
+                            variant="ghost" 
+                            size="icon" 
+                            className="h-5 w-5 text-muted-foreground hover:text-primary"
+                        >
+                            <Plus className="h-3 w-3" />
+                        </Button>
+                    </div>
+                    <ul className="space-y-0.5 px-2">
+                        {FOLDERS.map((folder) => (
+                            <li key={folder.id}>
+                                <Container delay={0.1}>
+                                    <Link
+                                        href={`/dashboard/folders/${folder.id}`}
+                                        className={buttonVariants({
+                                            variant: "ghost",
+                                            size: "sm",
+                                            className: cn(
+                                                "w-full !justify-start py-1.5 group relative",
+                                                pathname === `/dashboard/folders/${folder.id}` 
+                                                    ? "bg-muted font-medium" 
+                                                    : "text-muted-foreground hover:text-foreground"
+                                            ),
+                                        })}
+                                    >
+                                        <div className="flex items-center gap-2">
+                                            <svg 
+                                                width="16" 
+                                                height="16" 
+                                                viewBox="0 0 24 24"
+                                                className={cn(
+                                                    "transition-all duration-300",
+                                                    pathname === `/dashboard/folders/${folder.id}`
+                                                        ? "text-foreground"
+                                                        : "text-muted-foreground"
+                                                )}
+                                            >
+                                                <path 
+                                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                                                    fill="currentColor"
+                                                />
+                                            </svg>
+                                            <span className="text-sm">{folder.name}</span>
+                                        </div>
+                                    </Link>
+                                </Container>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
                 {/* Enhanced Profile Box */}
                 <div className="mt-auto border-t border-border/50 pt-3">
                     <Container delay={0.3}>
@@ -106,19 +169,19 @@ const DashboardSidebar = () => {
                                 </DropdownMenuLabel>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem asChild>
-                                    <Link href="/app/profile" className="cursor-pointer">
+                                    <Link href="/dashboard/profile" className="cursor-pointer">
                                         <User className="mr-2 h-4 w-4" />
                                         Profile
                                     </Link>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
-                                    <Link href="/app/billing" className="cursor-pointer">
+                                    <Link href="/dashboard/billing" className="cursor-pointer">
                                         <CreditCard className="mr-2 h-4 w-4" />
                                         Billing
                                     </Link>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
-                                    <Link href="/app/settings" className="cursor-pointer">
+                                    <Link href="/dashboard/settings" className="cursor-pointer">
                                         <Settings className="mr-2 h-4 w-4" />
                                         Settings
                                     </Link>

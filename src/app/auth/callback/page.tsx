@@ -29,7 +29,7 @@ const AuthCallbackPage = async () => {
             throw error;
         }
 
-        return redirect("/app");
+        return redirect("/dashboard");
     } catch (error) {
         console.error('Error in auth callback:', error);
         return redirect("/auth/signin?error=callback_failed");

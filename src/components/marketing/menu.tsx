@@ -41,7 +41,7 @@ const Menu = () => {
                                             Eddison AI
                                         </div>
                                         <p className="text-sm text-muted-foreground">
-                                            Your ultimate social media management tool
+                                            Your AI-powered study companion for personalized learning
                                         </p>
                                     </Link>
                                 </NavigationMenuLink>

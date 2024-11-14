@@ -1,22 +1,17 @@
 export const ANALYTICS_DATA = [
-    { name: 'Jan', engagement: 3000, reach: 5200 },
-    { name: 'Feb', engagement: 3500, reach: 4800 },
-    { name: 'Mar', engagement: 1800, reach: 6900 },
-    { name: 'Apr', engagement: 2900, reach: 4800 },
-    { name: 'May', engagement: 3600, reach: 6200 },
-    { name: 'Jun', engagement: 3800, reach: 6400 },
-    { name: 'Jul', engagement: 4200, reach: 7600 },
-    { name: 'Aug', engagement: 3400, reach: 5800 },
-    { name: 'Sep', engagement: 3800, reach: 6500 },
-    { name: 'Oct', engagement: 4600, reach: 8200 },
-    { name: 'Nov', engagement: 3900, reach: 7000 },
-    { name: 'Dec', engagement: 3200, reach: 5600 }
+    { name: 'Monday', studyTime: 3.5, avgSessionTime: 45 },
+    { name: 'Tuesday', studyTime: 4.2, avgSessionTime: 52 },
+    { name: 'Wednesday', studyTime: 3.8, avgSessionTime: 48 },
+    { name: 'Thursday', studyTime: 4.4, avgSessionTime: 55 },
+    { name: 'Friday', studyTime: 3.1, avgSessionTime: 42 },
+    { name: 'Saturday', studyTime: 5.3, avgSessionTime: 62 },
+    { name: 'Sunday', studyTime: 4.5, avgSessionTime: 58 }
 ];
 
 export const ACTIVITIES = [
-    { id: 1, text: 'New campaign "Summer Sale" created', time: '2 hours ago' },
-    { id: 2, text: 'Post scheduled for Instagram', time: '4 hours ago' },
-    { id: 3, text: 'Facebook engagement up by 23%', time: '6 hours ago' },
+    { id: 1, text: 'Completed Physics Chapter 5 Quiz', time: '2 hours ago' },
+    { id: 2, text: 'Created new Math study notes', time: '4 hours ago' },
+    { id: 3, text: 'Study streak: 7 days!', time: '6 hours ago' },
 ];
 
 export const RECENT_SALES = [

@@ -1,4 +1,4 @@
-import { ClockIcon, MessageSquare, BarChart2, FileTextIcon, UserPlusIcon, CreditCardIcon, SettingsIcon, LogOut, Headphones, ChartPieIcon, LucideIcon, MessagesSquareIcon, NewspaperIcon, MegaphoneIcon, LineChartIcon, MessageSquareTextIcon, UsersIcon } from 'lucide-react';
+import { LayoutDashboard, Plus, Library, Compass, FolderIcon, LucideIcon } from "lucide-react"
 
 type Link = {
     href: string;
@@ -6,43 +6,41 @@ type Link = {
     icon: LucideIcon;
 }
 
+type Folder = {
+    id: string;
+    name: string;
+    color?: string;
+}
+
 export const SIDEBAR_LINKS: Link[] = [
     {
-        href: "/dashboard",
         label: "Dashboard",
-        icon: ChartPieIcon,
+        icon: LayoutDashboard,
+        href: "/dashboard",
     },
     {
-        href: "/dashboard/campaigns",
-        label: "Campaigns",
-        icon: MegaphoneIcon
+        label: "New Deck",
+        icon: Plus,
+        href: "/dashboard/new-deck",
     },
     {
-        href: "/dashboard/analytics",
-        label: "Analytics",
-        icon: LineChartIcon
+        label: "My Decks",
+        icon: Library,
+        href: "/dashboard/my-decks",
     },
     {
-        href: "/dashboard/posts",
-        label: "Posts",
-        icon: MessageSquareTextIcon
+        label: "Explore",
+        icon: Compass,
+        href: "/dashboard/explore",
     },
-    {
-        href: "/dashboard/engagement",
-        label: "Engagement",
-        icon: UsersIcon
-    },
-    {
-        href: "/dashboard/billing",
-        label: "Billing",
-        icon: CreditCardIcon
-    },
-    {
-        href: "/dashboard/settings",
-        label: "Settings",
-        icon: SettingsIcon
-    },
-];
+]
+
+// Mock folders (later will come from database)
+export const FOLDERS: Folder[] = [
+    { id: '1', name: 'Mathematics', color: '#FF5733' },
+    { id: '2', name: 'Physics', color: '#33FF57' },
+    { id: '3', name: 'Computer Science', color: '#3357FF' },
+]
 
 export const FOOTER_LINKS = [
     {

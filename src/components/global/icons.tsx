@@ -11,29 +11,26 @@ const Icons = {
             className={cn("transition-all duration-200", props.className)}
         >
             <defs>
-                <linearGradient id="thunderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#f97316' }} />
-                    <stop offset="100%" style={{ stopColor: '#ea580c' }} />
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#6366f1' }} />
+                    <stop offset="100%" style={{ stopColor: '#4f46e5' }} />
                 </linearGradient>
-                <filter id="glow">
-                    <feGaussianBlur stdDeviation="2" result="blur" />
-                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                </filter>
             </defs>
-            <g filter="url(#glow)">
-                <path
-                    d="M13 2L4 13H11L10 22L19 11H12L13 2Z"
-                    className="stroke-orange-500"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M13 2L4 13H11L10 22L19 11H12L13 2Z"
-                    fill="url(#thunderGradient)"
-                    className="opacity-90"
-                />
-            </g>
+            <path
+                d="M7 4h10M7 12h8M7 20h10"
+                stroke="url(#logoGradient)"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="opacity-90"
+            />
+            <circle
+                cx="19"
+                cy="12"
+                r="2"
+                fill="url(#logoGradient)"
+                className="opacity-90"
+            />
         </svg>
     ),
     stars: (props: LucideProps) => (
@@ -61,14 +58,14 @@ const Icons = {
     ),
     gmail: (props: LucideProps) => (
         <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 49.4 512 399.42">
-            <g fill="none" fill-rule="evenodd">
-                <g fill-rule="nonzero">
+            <g fill="none" fillRule="evenodd">
+                <g fillRule="nonzero">
                     <path fill="#4285f4" d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z" />
                     <path fill="#34a853" d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z" />
                     <path fill="#fbbc04" d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z" />
                 </g>
-                <path fill="#ea4335" d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z" />
-                <path fill="#c5221f" fill-rule="nonzero" d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z" />
+                <path fill="#ea4335" d="M116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18v46.545L116.364 251z" />
+                <path fill="#c5221f" fillRule="nonzero" d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z" />
             </g>
         </svg>
     ),
@@ -86,7 +83,7 @@ const Icons = {
             <path fill="#0078d4" d="M24 17h6v6h-6z" />
             <path fill="#0a2767" d="m20.19 25.218-11.793-8.6.495-.87s10.745 6.12 10.909 6.212a.528.528 0 0 0 .42-.012l10.933-6.23.496.869z" opacity=".5" />
             <path fill="#1490df" d="m31.667 16.577-.014.008-.003.002-10.838 6.174a1.497 1.497 0 0 1-1.46.091l3.774 5.061 8.254 1.797v.004A1.498 1.498 0 0 0 32 28.5V16a.666.666 0 0 1-.333.577z" />
-            <path d="M32 28.5v-.738l-9.983-5.688-1.205.687a1.497 1.497 0 0 1-1.46.091l3.774 5.061 8.254 1.797v.004A1.498 1.498 0 0 0 32 28.5z" opacity=".05" />
+            <path d="M32 28.5v-.738l-9.983-5.688-1.205.687a1.497 1.497 0 0 1-1.46.092l3.774 5.061 8.254 1.797v.004A1.498 1.498 0 0 0 32 28.5z" opacity=".05" />
             <path d="M31.95 28.883 21.007 22.65l-.195.11a1.497 1.497 0 0 1-1.46.092l3.774 5.061 8.254 1.797v.004a1.501 1.501 0 0 0 .57-.83z" opacity=".1" />
             <path fill="#28a8ea" d="M8.35 16.59v-.01h-.01l-.03-.02A.65.65 0 0 1 8 16v12.5A1.498 1.498 0 0 0 9.5 30h21a1.503 1.503 0 0 0 .37-.05.637.637 0 0 0 .18-.06.142.142 0 0 0 .06-.02 1.048 1.048 0 0 0 .23-.13c.02-.01.03-.01.04-.03z" />
             <path d="M18 24.667V8.333A1.337 1.337 0 0 0 16.667 7H10.03v7.456l-1.68.958-.005.002-.012.007A.666.666 0 0 0 8 16v.005V16v10h8.667A1.337 1.337 0 0 0 18 24.667z" opacity=".1" />

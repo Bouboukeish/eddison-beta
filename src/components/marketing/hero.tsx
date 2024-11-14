@@ -19,7 +19,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <span className="inline-flex items-center justify-center gap-2 animate-text-gradient animate-background-shine bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-sm text-transparent">
-                        Build for the future
+                        Build for the future of education
                         <span className="text-xs text-secondary-foreground px-1.5 py-0.5 rounded-full bg-gradient-to-b from-foreground/20 to-foreground/10 flex items-center justify-center">
                             What&apos;s new
                             <ArrowRightIcon className="w-3.5 h-3.5 ml-1 text-foreground/50" />
@@ -28,18 +28,18 @@ const Hero = () => {
                 </div>
             </Container>
             <BlurText
-                word={"Your ultimate social media\n marketing tool"}
+                word={"Your AI-powered study\n companion"}
                 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-br from-foreground to-foreground/60 bg-clip-text text-transparent py-2 md:py-0 lg:!leading-snug font-medium racking-[-0.0125em] mt-6 font-heading"
             />
             <Container delay={0.1}>
                 <p className="text-sm sm:text-base lg:text-lg mt-4 text-accent-foreground/60 max-w-2xl mx-auto">
-                    Elevate your social media presense with AI-powered content creation and scheduling. <span className="hidden sm:inline">Eddison is the all-in-one solution for your social media marketing needs.</span>
+                    Transform your learning experience with AI-powered study tools. <span className="hidden sm:inline">Eddison turns your course materials into interactive, personalized learning content.</span>
                 </p>
             </Container>
             <Container delay={0.2}>
                 <div className="flex items-center justify-center md:gap-x-6 mt-8">
                     <Button asChild size="lg">
-                        <Link href="/app">
+                        <Link href="/dashboard">
                             Start for free
                         </Link>
                     </Button>

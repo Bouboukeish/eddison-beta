@@ -29,7 +29,7 @@ const Footer = () => {
                             Empower your business with our AI tools.
                         </p>
                         <Button className="mt-8">
-                            <Link href="/app">
+                            <Link href="/dashboard">
                                 Start for free
                             </Link>
                         </Button>

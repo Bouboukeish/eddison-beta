@@ -14,10 +14,10 @@ const Features = () => {
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
                     <SectionBadge title="Features" />
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        Create content faster <br /> and smarter
+                        Learn smarter, <br /> not harder
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        Transform your social media strategy with Eddison AI&apos;s cutting-edge features, designed to optimize your content creation and engagement like never before.
+                        Experience adaptive learning with Eddison AI's cutting-edge features, designed to transform your study materials into interactive, personalized content.
                     </p>
                 </div>
             </Container>
@@ -60,10 +60,10 @@ const Features = () => {
                                     </div>
                                     <div className="flex flex-col mt-auto">
                                         <h4 className="text-xl font-heading font-medium heading">
-                                            Content ideation
+                                            Smart Content Analysis
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Generate ideas for your content with our AI-powered tools to create engaging posts in seconds.
+                                            Upload any study material and let our AI analyze and transform it into interactive learning content.
                                         </p>
                                     </div>
                                 </div>
@@ -97,11 +97,11 @@ const Features = () => {
                             <MagicCard particles={true} className="flex flex-col items-start w-full row-span-1 bg-primary/[0.08]">
                                 <div className="bento-card w-full flex-row gap-6">
                                     <div className="flex flex-col mb-auto">
-                                        <h4 className="text-xl font-heading font-medium heading ">
-                                            Seamless integrations
+                                        <h4 className="text-xl font-heading font-medium heading">
+                                            Multi-format Learning
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Connect your favorite tools and platforms to streamline your workflow and save time.
+                                            Support for PDFs, images, websites, and YouTube videos - all transformed into personalized study materials.
                                         </p>
                                     </div>
                                     <div className="w-full h-28 relative">
@@ -120,11 +120,11 @@ const Features = () => {
                                         <Images.image className="w-full h-40 lg:h-auto" />
                                     </div>
                                     <div className="flex flex-col mt-auto">
-                                        <h4 className="text-xl font-heading font-medium heading ">
-                                            Image generation with AI
+                                        <h4 className="text-xl font-heading font-medium heading">
+                                            Visual Learning Aids
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Create stunning images with AI-powered tools in seconds.
+                                            AI-generated diagrams, mind maps, and visual summaries to enhance understanding.
                                         </p>
                                     </div>
                                 </div>
