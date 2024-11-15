@@ -210,7 +210,7 @@ const SignInForm = () => {
             >
                 <div className="flex justify-center">
                     <Link href="/">
-                        <Icons.icon className="w-8 h-8" />
+                        <Icons.icon className="h-9 w-9 md:h-10 md:w-10" />
                     </Link>
                 </div>
                 <h1 className="text-2xl text-center mt-4">

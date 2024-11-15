@@ -5,30 +5,44 @@ const Icons = {
     icon: (props: LucideProps) => (
         <svg
             {...props}
-            viewBox="0 0 24 24"
+            viewBox="0 0 46 46"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={cn("transition-all duration-200", props.className)}
         >
             <defs>
                 <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#6366f1' }} />
-                    <stop offset="100%" style={{ stopColor: '#4f46e5' }} />
+                    <stop offset="0%" stopColor="hsl(var(--primary))" />
+                    <stop offset="100%" stopColor="hsl(var(--secondary))" />
                 </linearGradient>
             </defs>
-            <path
-                d="M7 4h10M7 12h8M7 20h10"
-                stroke="url(#logoGradient)"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+
+            {/* Main square with rounded corners */}
+            <rect 
+                x="6" 
+                y="6" 
+                width="36" 
+                height="36" 
+                rx="12" 
+                fill="url(#logoGradient)"
                 className="opacity-90"
             />
+
+            {/* Abstract book/study elements */}
+            <path
+                d="M15 18L33 18M15 24L27 24M15 30L30 30"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="round"
+                className="opacity-80"
+            />
+
+            {/* Decorative dot */}
             <circle
-                cx="19"
-                cy="12"
-                r="2"
-                fill="url(#logoGradient)"
+                cx="33"
+                cy="24"
+                r="2.5"
+                fill="white"
                 className="opacity-90"
             />
         </svg>

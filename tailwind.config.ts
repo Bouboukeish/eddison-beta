@@ -106,6 +106,26 @@ const config = {
           "to": {
             transform: "rotate(360deg)"
           },
+        },
+        shine: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" }
+        },
+        pulse: {
+          "0%, 100%": { transform: "scale(1)", opacity: "1" },
+          "50%": { transform: "scale(1.05)", opacity: "0.8" }
+        },
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' }
+        },
+        smoothShine: {
+          "0%": { transform: "translateX(-100%)" },
+          "50%, 100%": { transform: "translateX(100%)" }
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
         }
       },
       animation: {
@@ -117,6 +137,10 @@ const config = {
         "ripple": "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
         "spotlight": "spotlight 2s ease .75s 1 forwards",
         "loading": "loading 0.6s linear infinite",
+        shine: "shine 1.5s ease-in-out infinite",
+        pulse: "pulse 2s ease-in-out infinite",
+        smoothShine: "smoothShine 2s ease-in-out infinite",
+        rotate: 'rotate 3s linear infinite'
       },
       spacing: {
         "1/8": "12.5%",

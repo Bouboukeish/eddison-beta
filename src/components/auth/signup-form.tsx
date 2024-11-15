@@ -192,7 +192,7 @@ const SignUpForm = () => {
             >
                 <div className="flex justify-center">
                     <Link href="/">
-                        <Icons.icon className="w-8 h-8" />
+                        <Icons.icon className="h-8 w-8 md:h-9 md:w-9" />
                     </Link>
                 </div>
                 <h1 className="text-2xl text-center mt-4">
