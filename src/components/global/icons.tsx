@@ -12,8 +12,8 @@ const Icons = {
         >
             <defs>
                 <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(var(--primary))" />
-                    <stop offset="100%" stopColor="hsl(var(--secondary))" />
+                    <stop offset="0%" stopColor="white" />
+                    <stop offset="100%" stopColor="white" />
                 </linearGradient>
             </defs>
 
@@ -31,7 +31,7 @@ const Icons = {
             {/* Abstract book/study elements */}
             <path
                 d="M15 18L33 18M15 24L27 24M15 30L30 30"
-                stroke="white"
+                stroke="#09090B"
                 strokeWidth="3"
                 strokeLinecap="round"
                 className="opacity-80"
@@ -42,7 +42,7 @@ const Icons = {
                 cx="33"
                 cy="24"
                 r="2.5"
-                fill="white"
+                fill="#09090B"
                 className="opacity-90"
             />
         </svg>

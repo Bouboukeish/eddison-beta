@@ -10,6 +10,7 @@ import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "
 import { ANALYTICS_DATA, ACTIVITIES } from "@/constants/dashboard"
 import { Container } from "@/components"
 import { StudyHeatmap } from "@/components/dashboard/study-heatmap"
+import Leaderboard from "@/components/dashboard/leaderboard"
 
 const chartConfig = {
     studyTime: {
@@ -136,28 +137,7 @@ const Page = () => {
 
                     {/* Recent Activities */}
                     <Container delay={0.3} className="col-span-3">
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>Recent Activities</CardTitle>
-                                <CardDescription>Your latest learning progress</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="space-y-8">
-                                    {ACTIVITIES.map((activity) => (
-                                        <div key={activity.id} className="flex items-center">
-                                            <div className="space-y-1">
-                                                <p className="text-sm font-medium leading-none">
-                                                    {activity.text}
-                                                </p>
-                                                <p className="text-sm text-muted-foreground">
-                                                    {activity.time}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </CardContent>
-                        </Card>
+                        <Leaderboard />
                     </Container>
                 </div>
             </div>
